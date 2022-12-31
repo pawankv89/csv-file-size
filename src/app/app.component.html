@@ -1,0 +1,22 @@
+
+<h1>Check CSV File Size</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File</title>
+</head>
+<body>
+    <div class="form-group">
+        <label class="d-block" for="file">Choose a file to import (.csv format)</label><br>
+        <input
+          #file
+          type="file"
+          class="d-block w-100"
+          id="file"
+          (change)="onFileChange($event)"
+          accept=".csv"
+        />
+        <div style="color: red">{{ message }}</div>
+      </div>
+</body>
+</html>
